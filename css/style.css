@@ -157,7 +157,7 @@ blockquote {
 }
 
 blockquote.large {
-	font-size:36px;
+	font-size:28px;
 	font-weight:700;
 	line-height:1.1em;
 }
@@ -309,7 +309,7 @@ h2.pagetitle {
 }
 .navbar-wrapper {
 	overflow:hidden;
-  z-index: 10
+  z-index: 9999
 }
 #menu-main {
 	margin-top: 1.625em;
@@ -343,7 +343,7 @@ ul#menu-main > li > a:focus {
 
 #header-wrapper {
 	width: 100%;
-	min-height: 600px;
+	height: 78vh;
 	margin-top: -60px;
 	padding-top:160px;
 	text-align:center;
@@ -372,14 +372,16 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(http://www.imgbase.info/images/safe-wallpapers/digital_art/abstract/43211_abstract_purple_purple_dots.jpg) no-repeat center center fixed;
-  /*background: #444 url(http://wallpapersia.com/wp-content/uploads/2017/06/Wallpapers-and-Backgrounds-2C9.jpg) no-repeat center center fixed;*/
+  background: #444 url(https://konacleaners.com/wp-content/uploads/2013/09/Rustic-Sewing_113169124-1024x683.jpg) no-repeat center left fixed;
+  /*background: #444 url(http://bramhalldrycleaners.co.uk/wp-content/uploads/2013/04/Alterations3.png) no-repeat center center fixed;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-
+#main-flexslider .flex-direction-nav{
+  display: none
+}
 #main-flexslider ul.slides li p {
 	font-size: 72px;
 	text-transform: uppercase;
@@ -1636,12 +1638,16 @@ i.icon-white {
 	#portfolio-wrap .grid {
 		width: 25%;
 	}
+  #main-flexslider ul.slides li p {
+  	font-size: 32px;
+  	line-height: 1.1;
+  }
 }
 
     /* Smaller screens ----------- */
 @media (max-width : 480px) {
 	#header-wrapper {
-		padding-top:80px;
+		padding-top: 100px;
 	}
 
   .navbar-inner h1.brand {
@@ -1728,4 +1734,19 @@ i.icon-white {
   	#contact-form input[type=submit] {
   		width: 100%;
   	}
+}
+
+@media only screen  and (min-device-width : 250px)  and (max-device-width : 320px) {
+  .navbar-inner h1.brand img{
+    width: 180px
+  }
+
+  .navbar-inner h1.brand {
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+
+  .navbar-inner .btn-navbar {
+    margin:25px 25px 0 0;
+  }
 }
