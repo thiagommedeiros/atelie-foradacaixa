@@ -372,7 +372,7 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-  background: #444 url(https://konacleaners.com/wp-content/uploads/2013/09/Rustic-Sewing_113169124-1024x683.jpg) no-repeat center left fixed;
+  background: #444 url(../img/bg/bg-home.jpg) no-repeat center left fixed;
   /*background: #444 url(http://bramhalldrycleaners.co.uk/wp-content/uploads/2013/04/Alterations3.png) no-repeat center center fixed;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -894,7 +894,7 @@ section#about {
 /* Contact Form */
 
 .validation {
-    color: red;
+    color: #FFF;
     display:none;
     margin: 0 0 20px;
     font-weight:400;
